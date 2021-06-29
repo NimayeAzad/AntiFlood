@@ -2,9 +2,8 @@
     class AntiFLood{
         /**
          * Written by: NimayeAzad (MonsterTeam) - 14 June 2021
-         * Version : 1.0
-         * Join our channel to get new updates : @NimaAzadDev
-         * You must be ethical in using this source (Do not edit or delete written information)
+         * https://github.com/NimayeAzad
+         * Version : 1.2
          */
         private $user_id;
         private $Database;
