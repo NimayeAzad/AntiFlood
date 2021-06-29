@@ -27,5 +27,65 @@ $from = isset($U["message"]["from"]["id"])?$U["message"]["from"]["id"]:$U["callb
 
 $AntiFlood->run($from,$U["update_id"]);
 
+
+$AntiFlood->GetReportSpam();
+/*
+View all reports of current user
+[
+    {
+        "id": "1",
+        "user_id": "123456789",
+        "time": "1624961634.6276",
+        "update_id": "0"
+    },
+    {
+        "id": "2",
+        "user_id": "123456789",
+        "time": "1624961634.6633",
+        "update_id": "0"
+    },
+    {
+        "id": "3",
+        "user_id": "123456789",
+        "time": "1624961634.72",
+        "update_id": "0"
+    },
+*/
+
+$AntiFlood->GetAllReportSpam();
+/*
+View spam reports from all users
+{
+    "123456789": [
+        {
+            "id": "1",
+            "user_id": "123456789",
+            "time": "1624961634.6276",
+            "update_id": "0"
+        },
+        {
+            "id": "2",
+            "user_id": "123456789",
+            "time": "1624961634.6633",
+            "update_id": "0"
+        }
+    ],
+    "987654321": [
+        {
+            "id": "9",
+            "user_id": "987654321",
+            "time": "1624961819.3238",
+            "update_id": "0"
+        },
+        {
+            "id": "10",
+            "user_id": "987654321",
+            "time": "1624961819.4981",
+            "update_id": "0"
+        }
+    ]
+}
+*/
+
 /* bot command code */
 ?>
